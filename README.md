@@ -29,4 +29,32 @@ IP addresses act like addresses in the postal system where they facilitate the d
 when you send data to another computer across the internet, the computers are the destinations that request and receive data. and the network are the roots that the data travels across, ipv4 and ipv6 are the 2 protocols used today. In ipv4 the ip address contains four octets, for example, 192.168.117.1 in ipv6 the ip address contains 8 hexadecimal octets. when you send data you send data in ip packets known as datagrams. at a high level ip packets contain a header and a payload that contains the data. the header contains information about the source and destination of the data, and the payload contains the actual data and other protocols. the 2 most common protocols used today are tcp and udp, transmission control protocol and user datagram protocol respectively. tcp can solve the problem of data being out of order at the cost of a small delay when sending the data, text or image files. UDP solves the corrupt, but data can still arrive out of order or not arrive at all, udp is used in voice calls or live video streams. and both of them have more protocols inside of them. these protocols help in data to arrive in order, doesn't become corrupted, and doesn't get dropped or lost during transit.
 
 HTTP and HTTPS hyper text transfer protocol and secure.
-HTTP is the protocol you  use whenever you use the web, it is the protocol used to transport images web pages (html) and other files. HTTP is a request-response protocol.
+HTTP is the protocol you  use whenever you use the web, it is the protocol used to transport images web pages (html) and other files. HTTP is a request-response protocol. a web browser or client sends an http request to a server an the server sends and HTTP response to the client or browser.
+and HTTP request consists of a method, path, version and header information. the method describes the action the client wants to perform, the most commonly HTTP methods are GET, POST, PUT, DELETE.
+the GET method is used to retrieve information from a given server, the POST method is used to send information / data to the server. the PUT method updates what is already on the server with something else and the DELETE method removes the resource from the server.
+
+HTTP request -
+GET / HTTP/1.1              the method, the path, and the HTTP version.
+Host: www.google.com        this part is the Headers containing information about the request.
+accept-language: en
+
+HTTP response -
+HTTP/1.1 200 OK
+content-type: text/html
+content-length: 1000
+connection: keep-alive
+last-modified: Mon, 01 Jan 1990 00:00:00 GMT
+server: Apache
+
+following the header the response contains the Message Body, which is the content of the web page, in this case html, images etc.
+
+HTTP status codes
+there are 5 groups of status codes.
+1xx - 199 Informational
+2xx Success
+3xx Redirection
+4xx Client Error
+5xx - 599 Server Error
+
+Information responses are Provisional responses sent by the server, these responses are interim before the actual response the most common informational response is 100 Continue, to continue the request or ignore the response if the request is already finished.
+Successful responses indicate that the request was processed successfully. these responses are 200 OK, 201 Created, 202 Accepted, 203 Non-Authoritative Information, 204 No Content, 205 Reset Content, 206 Partial Content.
