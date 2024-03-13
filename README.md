@@ -58,3 +58,4 @@ there are 5 groups of status codes.
 
 Information responses are Provisional responses sent by the server, these responses are interim before the actual response the most common informational response is 100 Continue, to continue the request or ignore the response if the request is already finished.
 Successful responses indicate that the request was processed successfully. these responses are 200 OK, 201 Created, 202 Accepted, 203 Non-Authoritative Information, 204 No Content, 205 Reset Content, 206 Partial Content.
+The meaning of ok depends on the HTTP method, for example if you send a GET request, it means that the resource was found/included, if the method is POST then the resource was successfully transmitted to the web server, as well with PUT, and DELETE, means that the resource was deleted.
