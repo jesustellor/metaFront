@@ -1,3 +1,12 @@
+https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+
+Again, you need to do this only once if you pass the --global option, because then Git will always use that information for anything you do on that system. If you want to override this with a different name or email address for specific projects, you can run the command without the --global option when you’re in that project.
+
+
+
 Title: How does the internet work?
 When 2 devices connect to each other wired or wirelessly forming something called a network. you can connect multiple devices to the same network, and can be complicated as each device needs to be connected to all the other devices in the network in order to communicate effectively with each other. A Network Switch allows multiple devices to connect and communicate with each other in a network. The network switch can connect to other network switches to form a larger network, until you have something called an interconnected network(the internet).
 a client server model is a way to stream or view website on the internet. the services are provided by servers. Our devices are called clients. (the internet connects the entire world). There are more details but this is the big picture of how things work.
@@ -65,3 +74,5 @@ Server Error responses indicate that the server encountered an error while proce
 
 HTTPS, when buying things online you would use HTTPS. it is the secure version of HTTP. it is used for secure communication between two computers so that nobody can see the information being sent and received. it does it by encryption. Like in HTTP the request and responses behave in the same way. the big difference is that before the content is sent it is turned into a secret code (encrypted). Only the other computer can turn the secret code back into its original content.
 Overview of HTTP, it is a protocol used by web clients and web servers. it works to transfer resources such as HTML files and is the foundation of any data exchange on the web. also remember that by using HTTPS you are encrypting the data. Request are sent by the client usually a web browser and the server responds with responses of an image or HTML file. HTTP request have a syntax that include the method, the path and the HTTP version, and headers. HTTP responses follow a similar format as the request, the HTTP status codes indicate if the request successfully completed. the status code is a three digit number that corresponds with groups representing different types of results.
+
+Webpages are based on three core technologies, HTML, CSS and Javascript. together you can create webpages and applications to offer any content you have seen online. On the first example there is a webpage that displays a digital clock, it shows the hour minute and seconds. the time is updated every second. made only with 3 files HTML CSS and Javascript. to create the clock element, first create a file called clock.html.
