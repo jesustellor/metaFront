@@ -82,4 +82,8 @@ HTTP is used on top of TCP to transfer webpages and other content from websites.
 DHCP is used to get an IP address. the server keeps track of computers on the network and their IP addresses.
 DNS is used to map the domain name to an IP address.
 IMAP is used to transfer emails, this protocol is used to download and manage your emails.
-SMTP is used to download emails to an email client.
+SMTP is used to download emails to an email client. you can also use it to send emails, but IMAP is more commonly used.
+POP the main difference in using POP vs IMAP is that POP will delete the emails on the server once they have been dowlaoaded.to your local device.
+FTP is used to transfer files between computers. or a way to transfer files between a computer and a server.
+SSH Is used to log in and interact with the computer remotely, all data over SSH is encrypted.
+SFTP SSH is used to transfer files between computers.
