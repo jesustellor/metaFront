@@ -87,3 +87,5 @@ POP the main difference in using POP vs IMAP is that POP will delete the emails 
 FTP is used to transfer files between computers. or a way to transfer files between a computer and a server.
 SSH Is used to log in and interact with the computer remotely, all data over SSH is encrypted.
 SFTP SSH is used to transfer files between computers.
+
+Websites, Webpages, and Web Applications. - What are the differences.
